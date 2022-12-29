@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   console.log("222 NEXT_PUBLIC_BASE_API", process.env.NEXT_PUBLIC_BASE_API);
-  console.log("222 NODE_ENV", process.env.NODE_ENV);
+  console.log("222 NEXT_PUBLIC_APP_ENV", process.env.NEXT_PUBLIC_APP_ENV);
 
   return (
     <div className={styles.container}>
