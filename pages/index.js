@@ -5,6 +5,8 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   console.log("222 NEXT_PUBLIC_BASE_API", process.env.NEXT_PUBLIC_BASE_API);
   console.log("222 NEXT_PUBLIC_APP_ENV", process.env.NEXT_PUBLIC_APP_ENV);
+  console.log("222 YARN_VERSION", YARN_VERSION);
+  console.log("222 process.env.YARN_VERSION", process.env.YARN_VERSION);
 
   return (
     <div className={styles.container}>
