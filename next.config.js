@@ -7,6 +7,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     unoptimized: true,
+    loader: "akamai",
+    path: "",
   },
 };
 
