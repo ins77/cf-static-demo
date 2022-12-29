@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     runtime: "experimental-edge",
+    externalDir: true,
   },
   reactStrictMode: true,
   swcMinify: true,
