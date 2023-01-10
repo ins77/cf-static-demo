@@ -1,9 +1,13 @@
-if [ "$CF_PAGES_BRANCH" == "main" ]; then
+# !/bin/bash
 
-  yarn build_mainnet && yarn next export
+# cloudflare build command: bash build.sh
 
-else
+chain="${CHAIN:-testnet}"
 
-  yarn build_testnet && yarn next export
+# if [ chain === "mainnet" ]; then
+#   yarn build_$chain && yarn next export
+# else
+#   yarn build_$chain && yarn next export
+# fi
 
-fi
+yarn build_$chain && yarn next export
