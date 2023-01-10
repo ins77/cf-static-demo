@@ -4,8 +4,10 @@
 
 chain="${CHAIN:-testnet}"
 
-if [ chain === "mainnet" ]; then
-  yarn build_mainnet && yarn next export
-else
-  yarn build_testnet && yarn next export
-fi
+# if [ chain === "mainnet" ]; then
+#   yarn build_$chain && yarn next export
+# else
+#   yarn build_$chain && yarn next export
+# fi
+
+yarn build_$chain && yarn next export
